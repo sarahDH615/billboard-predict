@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv 
+# from dotenv import load_dotenv 
 import spotipy
 import joblib
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -7,9 +7,12 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
-load_dotenv(dotenv_path='spotifyCredSarah.env')
-CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
-CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
+# load_dotenv(dotenv_path='spotifyCredSarah.env')
+# CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
+# CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
+
+CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
+CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
 
 spotify = spotipy.Spotify(
     client_credentials_manager=SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)

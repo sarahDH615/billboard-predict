@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 import numpy as np
 import sqlalchemy
@@ -12,7 +12,18 @@ from flask import Flask, jsonify, render_template, request
 
 
 
-engine = create_engine('postgres://postgres:sQLsdh1511@localhost:5433/billboard_songs', echo=False)
+# engine = create_engine('postgres://postgres:sQLsdh1511@localhost:5433/billboard_songs', echo=False)
+# postgres credentials
+# load_dotenv('postgresCred.env')
+# POSTGRES_ID = os.getenv('POSTGRES_ID')
+# POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD')
+
+POSTGRES_ID = os.environ['POSTGRES_ID']
+POSTGRES_PASSWORD = os.environ['POSTGRES_PASSWORD']
+
+# create engine to connect to postgres db 'billboard_songs'
+engine = create_engine(f'postgres://{POSTGRES_ID}:{POSTGRES_PASSWORD}@localhost:5433/billboard_songs')
+
 
 Base = automap_base()
 Base.prepare(engine, reflect=True)
