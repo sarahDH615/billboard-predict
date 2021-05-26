@@ -1,13 +1,13 @@
 import os
 # from dotenv import load_dotenv
-import flask_sqlalchemy
+from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
 import pickle
 from auxFunctionsSarah import *
-from flask import Flask, jsonify, render_template, request
+
 
 
 
