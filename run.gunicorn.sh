@@ -1,1 +1,1 @@
-gunicorn -b :5000 --access-logfile - --error-logfile - appSarah:app
+gunicorn -b :5000 --access-logfile - --error-logfile - appSarah:billboard-predict

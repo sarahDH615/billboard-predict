@@ -1,1 +1,1 @@
-web:gunicorn appSarah:app
+web: gunicorn appSarah:app
