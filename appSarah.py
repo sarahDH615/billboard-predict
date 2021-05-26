@@ -177,4 +177,5 @@ def predict():
                 return render_template('index.html', text = predictText)
 
 if __name__ == "__main__":
-    app.run(threaded=True, port=int(os.environ.get('PORT', 33507)))
+    # app.run(threaded=True, port=int(os.environ.get('PORT', 33507)))
+    app.run()
