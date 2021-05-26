@@ -75,13 +75,14 @@ et-xmlfile==1.0.1
 fastcache==1.1.0
 filelock==3.0.12
 flake8 @ file:///tmp/build/80754af9/flake8_1601911421857/work
-Flask==1.1.2
+Flask==0.11.1
 Flask-PyMongo==2.3.0
 flatbuffers==1.12
 fsspec @ file:///tmp/build/80754af9/fsspec_1602684995936/work
 future==0.18.2
 gast==0.3.3
 geojson==2.5.0
+gevent==1.2.1
 gevent @ file:///opt/concourse/worker/volumes/live/e6b243ce-c4b8-40bb-4934-ef3bf1c512f2/volume/gevent_1601397552921/work
 glob2==0.7
 gmaps==0.9.0
@@ -92,6 +93,7 @@ google-auth-oauthlib==0.4.4
 google-pasta==0.2.0
 greenlet @ file:///opt/concourse/worker/volumes/live/02d5d57d-1f11-4cf9-580a-19e679c78dc9/volume/greenlet_1600874049903/work
 grpcio==1.32.0
+gunicorn==19.0.0
 h11==0.8.1
 h2==3.2.0
 h5py==2.10.0
@@ -178,6 +180,7 @@ pandas @ file:///opt/concourse/worker/volumes/live/f14cf8c4-c564-4eff-4b17-158e9
 pandocfilters @ file:///opt/concourse/worker/volumes/live/c330e404-216d-466b-5327-8ce8fe854d3a/volume/pandocfilters_1605120442288/work
 parso==0.7.0
 partd==1.1.0
+passlib==1.7.0
 path @ file:///opt/concourse/worker/volumes/live/fcdf620c-46d6-4284-4c1e-5b8c3bc6c5c6/volume/path_1596907417277/work
 pathlib2 @ file:///opt/concourse/worker/volumes/live/de518564-0d9f-405e-472b-38136f0c2169/volume/pathlib2_1594381084269/work
 pathtools==0.1.2
@@ -274,6 +277,7 @@ splinter==0.14.0
 spotipy==2.18.0
 spyder @ file:///opt/concourse/worker/volumes/live/93f52c11-6bc0-49a8-541e-aa5e1de1eadc/volume/spyder_1599056974853/work
 spyder-kernels @ file:///opt/concourse/worker/volumes/live/b4ec5b57-5b3c-42d0-7731-c0691f88ee81/volume/spyder-kernels_1599056790993/work
+SQLAlchemy==1.1.5
 SQLAlchemy @ file:///opt/concourse/worker/volumes/live/0214475e-3c0a-49a9-6cb8-ab2d5c945bef/volume/sqlalchemy_1603812264100/work
 statsmodels @ file:///opt/concourse/worker/volumes/live/148a0e6d-2163-4103-6ef5-61556693c052/volume/statsmodels_1602280229372/work
 stevedore==3.3.0
@@ -310,7 +314,7 @@ wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webdriver-manager==3.3.0
 webdrivermanager @ file:///home/conda/feedstock_root/build_artifacts/webdrivermanager_1606858128788/work
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug== 0.11.15
 widgetsnbextension==3.5.1
 wrapt==1.12.1
 wurlitzer @ file:///opt/concourse/worker/volumes/live/01a17f3d-eafe-4806-57a1-4b9ef5d1815f/volume/wurlitzer_1594753845129/work
