@@ -1,6 +1,5 @@
 import os
 # from dotenv import load_dotenv
-import numpy as np
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
