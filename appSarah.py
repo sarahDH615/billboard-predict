@@ -1,6 +1,7 @@
 import os
 # from dotenv import load_dotenv
-import sqlalchemy
+import flask_sqlalchemy
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
